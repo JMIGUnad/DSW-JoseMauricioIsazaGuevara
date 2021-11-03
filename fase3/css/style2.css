@@ -1,0 +1,23 @@
+header{
+    background-color: #FDFCE0;
+    text-align: center;
+}
+nav{
+    background-color: #F0EEB1;
+}
+section{
+    background-color: #DAD773;
+    grid-column: 1/4;
+}
+.imgeje{
+    background-color: #DAD773;
+    text-align: center;
+    grid-column: 4/6;
+}
+footer{
+    background-color: #B1AD25;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
