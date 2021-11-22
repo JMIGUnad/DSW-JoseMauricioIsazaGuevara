@@ -20,3 +20,51 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
+ /*Implementacion del menu*/
+ *{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.navegacion{
+    width: 1000px;
+    margin: 30px auto;
+    background: #DAD5AB
+}
+.navegacion ul{
+    list-style: none;
+}
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+.menu > li >a{
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+.menu li a:hover {
+    color: #292c2e;
+    transition: all .3s;
+}
+.submenu {
+    position:absolute;
+    background: #e9e199;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-family:'open sans';
+    text-decoration:none;
+}
+.menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
